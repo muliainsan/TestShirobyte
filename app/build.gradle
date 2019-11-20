@@ -12,7 +12,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug{
+            manifestPlaceholders = [usesCleartextTraffic:"true"]
+        }
         release {
+            manifestPlaceholders = [usesCleartextTraffic:"false"]
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

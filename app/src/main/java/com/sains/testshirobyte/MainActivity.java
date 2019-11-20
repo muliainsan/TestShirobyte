@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         rv = findViewById(R.id.rv_data);
         Log.e("1q1q", String.valueOf(12345));
         final ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
