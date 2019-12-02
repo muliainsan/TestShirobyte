@@ -6,10 +6,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="asdf" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_data"
